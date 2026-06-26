@@ -1,0 +1,90 @@
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; }
+.page { font-family: var(--font-sans); background: #ffffff; color: var(--color-text-primary); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; border-bottom: 0.5px solid var(--color-border-tertiary); }
+.nav-logo { display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 500; }
+.hero { text-align: center; padding: 80px 48px 64px; }
+.hero-logo { margin: 0 auto 24px; display: block; }
+.hero h1 { font-size: 15px; font-weight: 400; color: var(--color-text-secondary); margin-bottom: 8px; letter-spacing: 0.05em; }
+.hero-mission { font-size: 28px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 16px; line-height: 1.4; }
+.hero-vision { font-size: 16px; color: var(--color-text-secondary); line-height: 1.7; }
+.divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 0 48px; }
+.section { padding: 64px 48px; }
+.section-label { font-size: 12px; color: var(--color-text-tertiary); letter-spacing: 0.1em; margin-bottom: 24px; }
+.section h2 { font-size: 22px; font-weight: 500; margin-bottom: 16px; }
+.section p { font-size: 15px; color: var(--color-text-secondary); line-height: 1.8; }
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 32px; }
+.card { background: #f9f8f6; border-radius: var(--border-radius-lg); padding: 24px; }
+.card-icon { font-size: 22px; color: var(--color-text-secondary); margin-bottom: 12px; }
+.card h3 { font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+.card p { font-size: 13px; color: var(--color-text-secondary); line-height: 1.7; }
+.footer { border-top: 0.5px solid var(--color-border-tertiary); padding: 32px 48px; display: flex; justify-content: space-between; align-items: center; }
+.footer p { font-size: 13px; color: var(--color-text-tertiary); }
+</style>
+
+<div class="page">
+<nav class="nav">
+  <div class="nav-logo">
+    <svg width="28" height="28" viewBox="0 0 100 170" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="100" height="150" rx="50" fill="currentColor"/>
+      <rect x="8" y="8" width="84" height="134" rx="42" fill="#ffffff"/>
+      <rect x="16" y="16" width="68" height="118" rx="34" fill="currentColor"/>
+      <circle cx="36" cy="65" r="16" fill="#ffffff"/>
+      <circle cx="64" cy="65" r="16" fill="#ffffff"/>
+      <circle cx="36" cy="65" r="10" fill="currentColor"/>
+      <circle cx="64" cy="65" r="10" fill="currentColor"/>
+      <circle cx="36" cy="65" r="5" fill="#ffffff"/>
+      <circle cx="64" cy="65" r="5" fill="#ffffff"/>
+      <circle cx="36" cy="65" r="2" fill="currentColor"/>
+      <circle cx="64" cy="65" r="2" fill="currentColor"/>
+      <polygon points="50,82 42,94 58,94" fill="currentColor"/>
+      <polygon points="50,85 44,94 56,94" fill="#ffffff"/>
+      <polygon points="16,16 0,0 32,12" fill="currentColor"/>
+      <polygon points="84,16 100,0 68,12" fill="currentColor"/>
+      <polygon points="16,120 4,150 36,138" fill="currentColor"/>
+      <polygon points="84,120 96,150 64,138" fill="currentColor"/>
+    </svg>
+    PONDOWL
+  </div>
+</nav>
+
+<section class="hero">
+  <p class="hero h1">ミッション</p>
+  <p class="hero-mission">作りたいを、爆速で世界へ届ける</p>
+  <p class="hero-vision">人間はインスピレーションを、AIは実行を</p>
+</section>
+
+<hr class="divider">
+
+<section class="section">
+  <p class="section-label">ABOUT</p>
+  <h2>AIネイティブなIT企業</h2>
+  <p>PONDOWLは、AIを中心とした自社サービスの企画・開発・運営を行うIT企業です。<br>ウェブ・スマホアプリ・PCアプリを中心に、SNSやゲームなどITサービス全般を手がけます。<br>デザイン・エンジニアリング・QAなど全業務をAIが担い、人間はインスピレーションと意思決定に集中します。</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon"><i class="ti ti-device-mobile" aria-hidden="true"></i></div>
+      <h3>アプリ開発</h3>
+      <p>ウェブ・スマホ・PCアプリを自社で企画・開発。アイデアを素早くプロダクトへ。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon"><i class="ti ti-robot" aria-hidden="true"></i></div>
+      <h3>AI駆動開発</h3>
+      <p>設計・実装・QAまで全工程をAIが担当。圧倒的なスピードで高品質なサービスを届けます。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon"><i class="ti ti-world" aria-hidden="true"></i></div>
+      <h3>グローバル展開</h3>
+      <p>SNS・ゲームなど幅広いジャンルで、世界中のユーザーへサービスを提供します。</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<footer class="footer">
+  <p>© 2025 PONDOWL. All rights reserved.</p>
+  <p>pondowl.com</p>
+</footer>
+</div>
