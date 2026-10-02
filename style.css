@@ -4,6 +4,8 @@
   --color-text-secondary: #555555;
   --color-text-tertiary: #767676;
   --color-border-tertiary: #e6e4e0;
+  --color-accent: #598a87;
+  --color-accent-strong: #44706d;
   --border-radius-lg: 12px;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -15,18 +17,20 @@ a { color: inherit; }
 .hero { text-align: center; padding: 96px 48px 88px; }
 .hero-logo { width: 240px; height: 240px; margin: 0 auto 20px; display: block; }
 .hero-name { font-size: 52px; font-weight: 600; letter-spacing: 0.14em; line-height: 1.2; margin-bottom: 64px; }
-.hero-label { font-size: 12px; font-weight: 400; color: var(--color-text-secondary); margin-bottom: 8px; letter-spacing: 0.1em; }
-.hero-mission { font-size: 28px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 16px; line-height: 1.4; }
+.hero-meaning { font-size: 18px; color: var(--color-text-secondary); line-height: 1.9; letter-spacing: 0.01em; }
+.hero-meaning::after { content: ""; display: block; width: 32px; height: 2px; background: var(--color-accent); margin: 36px auto; }
+.hero-mission { font-size: 34px; font-weight: 600; color: var(--color-text-primary); letter-spacing: 0.02em; line-height: 1.3; }
 .divider { border: none; border-top: 1px solid var(--color-border-tertiary); margin: 0 48px; }
 .section { padding: 64px 48px; }
-.section-label { font-size: 12px; color: var(--color-text-tertiary); letter-spacing: 0.1em; margin-bottom: 24px; }
+.section-label { font-weight: 500; letter-spacing: 0.1em; margin-bottom: 24px; }
 .section h2 { font-size: 22px; font-weight: 500; margin-bottom: 16px; }
 .section p { font-size: 15px; color: var(--color-text-secondary); line-height: 1.8; }
 .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 32px; }
 .card { background: #f9f8f6; border-radius: var(--border-radius-lg); padding: 24px; }
 .card h3 { font-size: 15px; font-weight: 500; margin-bottom: 8px; }
 .card p { font-size: 13px; color: var(--color-text-secondary); line-height: 1.7; }
-.contact-link { display: inline-block; margin-top: 16px; font-size: 16px; color: var(--color-text-primary); text-decoration: underline; text-underline-offset: 4px; }
+.contact-link { display: inline-block; margin-top: 16px; font-size: 16px; color: var(--color-accent-strong); text-decoration: none; text-underline-offset: 4px; }
+.contact-link:hover { text-decoration: underline; }
 
 /* 下層ページ（プライバシーポリシー・404） */
 .subpage-header { padding: 24px 48px; }
@@ -36,7 +40,8 @@ a { color: inherit; }
 .document h2 { font-size: 17px; font-weight: 500; margin: 40px 0 12px; }
 .document p, .document li { font-size: 15px; color: var(--color-text-secondary); line-height: 1.8; }
 .document ul { padding-left: 1.4em; margin-top: 8px; }
-.document a { text-underline-offset: 3px; overflow-wrap: anywhere; }
+.document a { color: var(--color-accent-strong); text-decoration: none; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.document a:hover { text-decoration: underline; }
 .document p + p, .document p + ul, .document ul + p { margin-top: 12px; }
 .document .document-date { margin-top: 48px; }
 .notfound { text-align: center; padding: 96px 48px 120px; }
@@ -47,14 +52,17 @@ a { color: inherit; }
 /* フッター */
 .footer { border-top: 1px solid var(--color-border-tertiary); margin: 0 48px; padding: 32px 0; text-align: center; }
 .footer-links { list-style: none; margin-bottom: 12px; }
-.footer-links a { font-size: 13px; color: var(--color-text-secondary); text-underline-offset: 3px; }
+.footer-links a { font-size: 13px; color: var(--color-accent-strong); text-decoration: none; text-underline-offset: 3px; }
+.footer-links a:hover { text-decoration: underline; }
 .footer p { font-size: 13px; color: var(--color-text-tertiary); }
 
 @media (max-width: 600px) {
   .hero { padding: 64px 24px 56px; }
   .hero-logo { width: 160px; height: 160px; }
   .hero-name { font-size: 36px; margin-bottom: 48px; }
-  .hero-mission { font-size: 22px; }
+  .hero-meaning { font-size: 16px; }
+  .hero-meaning::after { margin: 28px auto; }
+  .hero-mission { font-size: 26px; }
   .divider { margin: 0 24px; }
   .section { padding: 48px 24px; }
   .cards { grid-template-columns: 1fr; gap: 12px; margin-top: 24px; }
